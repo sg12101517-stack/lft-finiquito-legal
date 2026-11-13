@@ -1,0 +1,187 @@
+<!-- Calculadora Finiquito LFT — Aviso de Privacidad / Privacy Policy (Reemplazar sg12101517@gmail.com antes de publicar) -->
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aviso de Privacidad / Privacy Policy — Calculadora Finiquito LFT</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --accent: #0284c7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 24px 16px 48px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px 24px;
+      box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+    }
+    nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a.active {
+      color: var(--text);
+      font-weight: 700;
+    }
+    nav a:hover { text-decoration: underline; }
+    h1 { font-size: 1.65rem; margin: 0 0 8px; }
+    h2 { font-size: 1.2rem; margin-top: 24px; margin-bottom: 8px; color: var(--text); }
+    p, li { color: var(--text); font-size: 0.98rem; }
+    .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 20px; }
+    .highlight-box {
+      background: #f0f9ff;
+      border-left: 4px solid var(--accent);
+      padding: 12px 16px;
+      border-radius: 6px;
+      margin: 16px 0;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 32px 0;
+    }
+    footer {
+      margin-top: 32px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.88em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="privacy-policy.html" class="active">Aviso de Privacidad</a>
+      <a href="terms.html">Términos de Uso</a>
+      <a href="support.html">Soporte</a>
+      <a href="#en">English Version ↓</a>
+    </nav>
+
+    <!-- ==================== ESPAÑOL (es-MX) ==================== -->
+    <section id="es">
+      <h1>Aviso de Privacidad</h1>
+      <p class="meta">
+        <strong>Aplicación:</strong> Calculadora Finiquito LFT (<code>mx.lftcalc.finiquito</code>)<br>
+        <strong>Última actualización:</strong> 13 de noviembre de 2026
+      </p>
+
+      <div class="highlight-box">
+        <strong>Resumen claro:</strong> <strong>Calculadora Finiquito LFT</strong> funciona <strong>100% sin conexión (offline)</strong>. <strong>No recopilamos, no almacenamos en servidores externos, no transmitimos ni vendemos ningún dato personal ni laboral.</strong> Todos los cálculos y los archivos PDF se procesan exclusivamente dentro de tu propio dispositivo.
+      </div>
+
+      <h2>1. Datos que NO recopilamos</h2>
+      <p>La aplicación no cuenta con servidores propios, bases de datos en la nube ni sistema de cuentas de usuario. En particular:</p>
+      <ul>
+        <li><strong>Sin datos personales:</strong> No solicitamos ni recolectamos tu nombre, correo electrónico, teléfono, CURP, RFC, NSS ni nombre de tu empleador.</li>
+        <li><strong>Sin datos laborales en servidores:</strong> Las fechas de ingreso y salida, salarios, prestaciones y motivos de separación que introduces en el formulario se utilizan únicamente en la memoria local de tu iPhone o iPad para realizar el cálculo en ese momento.</li>
+        <li><strong>Sin rastreo ni analítica de terceros:</strong> No integramos SDKs de publicidad, rastreadores entre aplicaciones (<code>NSPrivacyTracking = false</code>) ni herramientas de telemetría de terceros.</li>
+      </ul>
+
+      <h2>2. Procesamiento 100% local y generación de PDF</h2>
+      <ul>
+        <li><strong>Cálculo en el dispositivo:</strong> El motor de cálculo (<code>FiniquitoEngine</code>) se ejecuta íntegramente de forma local en tu dispositivo iOS/iPadOS.</li>
+        <li><strong>Preferencias locales mínimas:</strong> La aplicación únicamente utiliza el almacenamiento estándar del sistema (<code>UserDefaults</code>, categoría declarada <code>CA92.1</code> en el manifiesto de privacidad de Apple) para recordar en tu propio dispositivo si ya leíste y aceptaste el aviso legal inicial (<code>avisoLegalAceptado.v1</code>).</li>
+        <li><strong>Exportación de PDF:</strong> Cuando generas un desglose en PDF (función Pro), el documento se crea localmente en la carpeta temporal del sistema (<code>temporaryDirectory</code>) mediante las herramientas nativas de iOS (<code>UIGraphicsPDFRenderer</code>) y solo se comparte si tú decides enviarlo o guardarlo a través de la hoja de compartir del sistema.</li>
+      </ul>
+
+      <h2>3. Compras dentro de la aplicación (Apple StoreKit 2)</h2>
+      <p>
+        Las opciones de desbloqueo de <strong>Finiquito LFT Pro</strong> —compra única vitalicia de <strong>MX$149</strong> (<code>mx.lftcalc.finiquito.pro.vitalicio</code>) y suscripción anual de <strong>MX$299/año</strong> (<code>mx.lftcalc.finiquito.pro.anual</code>)— son procesadas directa y exclusivamente por <strong>Apple Inc.</strong> a través del marco nativo <strong>StoreKit 2</strong> y tu cuenta de App Store.
+      </p>
+      <ul>
+        <li>Nosotros <strong>nunca</strong> tenemos acceso a tu número de tarjeta bancaria, datos de facturación ni credenciales de tu cuenta de Apple.</li>
+        <li>La aplicación únicamente consulta al sistema operativo el estado de validación criptográfica de tu transacción (<code>Transaction.currentEntitlements</code>) para habilitar las funciones Pro en tu dispositivo y permitirte restaurar tus compras (<code>Restaurar compras</code>).</li>
+        <li>El tratamiento de tus datos de pago por parte de Apple se rige por la <a href="https://www.apple.com/mx/legal/privacy/" target="_blank" rel="noopener">Política de Privacidad de Apple</a>.</li>
+      </ul>
+
+      <h2>4. Derechos ARCO y contacto</h2>
+      <p>
+        Dado que no recopilamos ni conservamos datos personales en ningún servidor, no mantenemos bases de datos con información identificable de los usuarios. No obstante, para cualquier duda, aclaración o solicitud relacionada con este Aviso de Privacidad o con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP), puedes escribirnos en cualquier momento a:
+      </p>
+      <p><strong>Correo de contacto:</strong> <a href="mailto:sg12101517@gmail.com">sg12101517@gmail.com</a></p>
+    </section>
+
+    <hr>
+
+    <!-- ==================== ENGLISH ==================== -->
+    <section id="en" lang="en">
+      <h1>Privacy Policy (English)</h1>
+      <p class="meta">
+        <strong>App:</strong> Calculadora Finiquito LFT (<code>mx.lftcalc.finiquito</code>)<br>
+        <strong>Last Updated:</strong> November 13, 2026
+      </p>
+
+      <div class="highlight-box">
+        <strong>Summary:</strong> <strong>Calculadora Finiquito LFT</strong> operates <strong>100% offline</strong>. <strong>We do not collect, transmit, store on external servers, or sell any personal or employment data.</strong> All calculations and PDF exports happen strictly on your device.
+      </div>
+
+      <h2>1. No Personal Data Collection</h2>
+      <ul>
+        <li><strong>No Accounts or Identifiers:</strong> The app does not require registration or login, and does not ask for your name, email address, phone number, government ID, or employer name.</li>
+        <li><strong>100% On-Device Calculation:</strong> All employment dates, salary figures, and severance parameters entered into the form are processed exclusively in your device's local memory by our native calculation engine. Nothing leaves your iPhone or iPad.</li>
+        <li><strong>No Third-Party Tracking or Analytics:</strong> We do not include any third-party analytics SDKs, advertising networks, or cross-app tracking (<code>NSPrivacyTracking = false</code>; <code>NSPrivacyCollectedDataTypes = []</code>).</li>
+      </ul>
+
+      <h2>2. Local Device Storage &amp; PDF Generation</h2>
+      <ul>
+        <li><strong>System UserDefaults (<code>CA92.1</code>):</strong> The app stores a single boolean flag (<code>avisoLegalAceptado.v1</code>) in local on-device <code>UserDefaults</code> solely to remember that you have acknowledged the initial legal disclaimer.</li>
+        <li><strong>On-Device PDF Export:</strong> When Pro users export a PDF summary, the file is rendered locally using Apple's native <code>UIGraphicsPDFRenderer</code> into the device's temporary directory and handed off to the standard iOS Share Sheet only upon your action.</li>
+      </ul>
+
+      <h2>3. Payments Processed by Apple (StoreKit 2)</h2>
+      <p>
+        All In-App Purchases—including the one-time lifetime unlock at <strong>MX$149</strong> (<code>mx.lftcalc.finiquito.pro.vitalicio</code>) and the annual auto-renewable subscription at <strong>MX$299/year</strong> (<code>mx.lftcalc.finiquito.pro.anual</code>)—are processed securely and exclusively by <strong>Apple Inc.</strong> via native <strong>StoreKit 2</strong>. We never receive, view, or store your credit card, billing, or Apple ID payment information.
+      </p>
+
+      <h2>4. Contact Us</h2>
+      <p>
+        If you have any questions about this Privacy Policy, please contact us at:
+        <a href="mailto:sg12101517@gmail.com">sg12101517@gmail.com</a>
+      </p>
+    </section>
+
+    <footer>
+      Calculadora Finiquito LFT · Aplicación independiente sin afiliación gubernamental ·
+      <a href="index.html">Inicio</a> ·
+      <a href="terms.html">Términos de Uso</a> ·
+      <a href="support.html">Soporte</a> ·
+      Contacto: <a href="mailto:sg12101517@gmail.com">sg12101517@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
